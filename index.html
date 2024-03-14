@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- ICONA -->
+    <link rel="icon" href="images/todolist.svg">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- INTESTAZIONE -->
+        <header class="panel">
+            <h1>HOLLAND
+                <!-- <br> -->
+                WATCHLIST</h1>
+            <img src="images/Avatar@2x.png" alt="logo">
+        </header>
+
+        <!-- SEZIONE PRINCIPALE -->
+        <main>
+
+            <!-- MESSAGGIO DA MOSTRARE SE NON HO ATTIVITA' -->
+            <p class="empty-list-message">
+            </p>
+
+            <!-- LISTA ATTIVITA' -->
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="images/check3.svg" alt="check icon">
+                    </div>
+                    <p class="todo-text">Cherry</p>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="images/check3.svg" alt="check icon">
+                    </div>
+                    <p class="todo-text">Uncharted</p>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="images/check3.svg" alt="check icon">
+                    </div>
+                    <p class="todo-text">The Impossible</p>
+                </li>
+            </ul>
+
+            <!-- PANNELLO AGGIUNTA ATTIVITA' -->
+            <div class="panel add-todo">
+                <input type="text" placeholder="Aggiungi film/serie tv">
+                <button>
+                    <img src="images/plus3.svg" alt="plus-icon">
+                </button>
+            </div>
+
+            <div class="reset">
+                <p>SVUOTA LISTA</p>
+                <button id="btn-clear">
+                    <img src="images/reset.svg" alt="reset-icon">
+                </button>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

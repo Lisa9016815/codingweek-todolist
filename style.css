@@ -1,0 +1,105 @@
+:root {
+  --grey: #BFBFBF;
+  --black: #0F0F0F;
+  --grey2: #ABABAB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+  background-color: var(--grey);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.container header h1 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.container header img {
+  width: 80px;
+}
+.container main .empty-list-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.container main .todo-list .todo-item {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  background-color: white;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+.container main .todo-list .todo-item .todo-check {
+  padding: 16px;
+  background-color: var(--grey2);
+  border-radius: 16px 0 0 16px;
+  cursor: pointer;
+}
+.container main .todo-list .todo-item .todo-text {
+  padding: 16px;
+}
+.container main .todo-list img {
+  width: 40px;
+}
+.container main .add-todo {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+.container main .panel input {
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  flex-grow: 1;
+}
+.container main .panel button {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey2);
+  cursor: pointer;
+}
+.container main .panel button img {
+  width: 40px;
+}
+.container main .reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.container main .reset #btn-clear {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey2);
+  cursor: pointer;
+}
+.container main .reset #btn-clear img {
+  width: 40px;
+}
+.container .panel {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--black);
+}/*# sourceMappingURL=style.css.map */
