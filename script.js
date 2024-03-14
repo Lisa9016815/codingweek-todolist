@@ -72,10 +72,10 @@ function makeCheckClickable() {
       // Rimuovi l'elemento dalla lista
       activities.splice(index, 1);
 
-      if (confirm("Are you sure you want to delete this task?")) {
-        activities.splice(index, 1);
-        // showContent();
-      }
+      // if (confirm("Are you sure you want to delete this task?")) {
+      //   activities.splice(index, 1);
+      //   // showContent();
+      // } else {}
 
       // Aggiorna anche il localStorage
       localStorage.setItem(STORAGE_KEY, JSON.stringify(activities));
