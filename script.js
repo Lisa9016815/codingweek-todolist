@@ -56,7 +56,7 @@ function showContent() {
   } else {
     // ALTRIMENTI
     // Mostra il messaggio di lista vuota
-    emptyListMessage.innerText = 'Sembra che non ci siano attività';
+    emptyListMessage.innerText = 'Sembra che non ci siano film/telefilm da vedere';
   }
 
 }
@@ -75,7 +75,7 @@ function makeCheckClickable() {
       // if (confirm("Are you sure you want to delete this task?")) {
       //   activities.splice(index, 1);
       //   // showContent();
-      // } else {}
+      // } else {window.location = location.reload}
 
       // Aggiorna anche il localStorage
       localStorage.setItem(STORAGE_KEY, JSON.stringify(activities));
