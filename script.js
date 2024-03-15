@@ -6,6 +6,8 @@ const inputField = document.querySelector('input');
 const todoList = document.querySelector('.todo-list');
 const emptyListMessage = document.querySelector('.empty-list-message');
 
+const sadHolland = document.getElementById('sadHolland');
+
 // Creo una chiave per il local storage
 const STORAGE_KEY = '__bool_todo__';
 
@@ -46,6 +48,7 @@ function showContent() {
 
       // Inseriscilo in pagina
       todoList.innerHTML += template;
+      sadHolland.style.display = 'none';
     });
 
     // Rendi cliccabili i check
@@ -57,6 +60,7 @@ function showContent() {
     // ALTRIMENTI
     // Mostra il messaggio di lista vuota
     emptyListMessage.innerText = 'Sembra che non ci siano film/telefilm da vedere';
+    sadHolland.style.display = 'block';
   }
 
 }
